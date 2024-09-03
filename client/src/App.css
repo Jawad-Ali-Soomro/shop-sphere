@@ -1,0 +1,18 @@
+body {
+  color: #212121;
+  font-family: "Poppins";
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.bw {
+  justify-content: space-between;
+}

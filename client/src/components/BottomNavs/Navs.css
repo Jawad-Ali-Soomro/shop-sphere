@@ -1,0 +1,12 @@
+.navigations {
+  width: 100%;
+  grid-gap: 30px;
+  ul {
+    gap: 20px;
+    li {
+      list-style: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.header {
+  width: calc(100% - 200px);
+  height: 12vh;
+  position: absolute;
+  z-index: 11000000;
+  top: 0;
+  .logo {
+    animation: animate 0.3s linear;
+    img {
+      width: 120px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  }
+  .navs {
+    ul {
+      gap: 20px;
+      .icons {
+        gap: 20px;
+        .icon {
+          width: 35px;
+          height: 35px;
+          border: 1px solid #80808090;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          color: black;
+        }
+        .icon::before {
+          content: attr(data-info);
+          position: absolute;
+          font-size: 0.5rem;
+          top: 110%;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .icon::after {
+          content: attr(data-count);
+          width: 25px;
+          height: 25px;
+          background: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          position: absolute;
+          font-size: 0.6rem;
+          bottom: calc(100% - 10px);
+          right: -5px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+      .bars {
+        gap: 3px;
+        margin-left: 50px;
+        cursor: pointer;
+        .bar {
+          width: 30px;
+          height: 1.5px;
+          background: black;
+        }
+      }
+    }
+  }
+  .search-bar {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    padding-left: 10px;
+    input {
+      font-family: Poppins;
+      width: 250px;
+      height: 40px;
+      border: none;
+      background: none;
+      outline: none;
+      color: black;
+    }
+  }
+}
